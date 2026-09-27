@@ -3,6 +3,7 @@ import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
+import Card from './components/Card'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,6 +11,11 @@ function App() {
   return (
     <>
       <section id="center">
+        <div className="flex flex-wrap justify-center">
+        <Card title="React Basics" description="Learn how to create components and props." image="https://picsum.photos/300/200"/>
+        <Card title="Reusable Components" description="Build flexible components for scalability." image="https://picsum.photos/300/201"/>
+        <Card title="Modern UI Development" description="Combine React with Tailwind CSS for fast design." image="https://picsum.photos/300/202"/>
+        </div>
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
           <img src={reactLogo} className="framework" alt="React logo" />
@@ -119,4 +125,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
